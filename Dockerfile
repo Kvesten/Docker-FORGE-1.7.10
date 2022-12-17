@@ -7,7 +7,7 @@ ARG JAVA_XMS=2048M
 ENV JAVA_XMS="${JAVA_XMS}"
 ARG OTHER_PARAMETERS=
 ENV OTHER_PARAMETERS="${OTHER_PARAMETERS}"
-
+# Ц костыль, для того, что бы можно было запускать в docker-compose с пустой папкой по умолчанию.
 WORKDIR /apps
 COPY ./src/run.sh ./
 WORKDIR /apps/src

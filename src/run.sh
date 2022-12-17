@@ -1,3 +1,4 @@
+# Костыль, что бы были файлы при использовании docker-compose
 FILE=forge.jar
 if test -f "$FILE"; then
 echo "Starting"
